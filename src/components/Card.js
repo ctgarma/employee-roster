@@ -7,6 +7,10 @@ class Card extends Component {
         return str.split(" ").splice(0, no_words).join(" ");
     }   
 
+    handleClick(id) {
+        
+        this.props.onClick(id);
+    }
     render() {
         const {info, sortfield} = this.props;
         const filterfield = this.props.filterfield.toLowerCase();
@@ -23,7 +27,7 @@ class Card extends Component {
 
             const bio = this.truncate(emp.bio, 10);
             return (
-                <div key={emp.id} className="card col-4" >
+                <div key={emp.id} className="card col-4" onClick={() => {this.handleClick(emp.id)}}>
                     <div className="card-image">
                         <img src={emp.avatar} alt={emp.firstName} />
                     </div>
