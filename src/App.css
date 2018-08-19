@@ -27,10 +27,13 @@
 
 .App-bar-control input,.App-bar-control select {
   margin-top:10px;
-  
-
 }
 
+
+.App-bar-control input {
+margin-right:10px;
+
+}
 .contents {
   padding:10px;
   float:left;
@@ -121,7 +124,7 @@ margin-bottom:10px;
   .card-details {
     float:left;
     width:60%;
-    padding:10px;
+    padding:20px 10px 10px 20px;
   }
   
   .card-details p {
@@ -131,30 +134,30 @@ margin-bottom:10px;
 
 
 .profile {
-
   text-align: left;
-
 }
-.profile-image {
 
+.profile-image {
   margin:20px 20px 0px 20px;
   width:25%;
 }
 
 .profile-image img {
-
   width:100%;
 }
 
 
-.profile-name {
-  border-bottom:1px solid grey;
+.profile-name { 
   padding-bottom:5px;
   width:75%;
   display:flex;
   margin-top:auto;
 }
 
+.profile-name p {
+  border-bottom:1px solid grey;
+  margin-bottom:0px;
+}
 
 .profile-top, .profile-info {
   overflow: hidden;
@@ -163,19 +166,17 @@ margin-bottom:10px;
   margin-top:auto;   
    
 }
-.profile-jobtitle {
-  margin:20px 20px 0px 20px;
-  width:25%;
 
+.profile-jobtitle {
+  margin:0px 20px 0px 20px;
+  width:25%;
 }
 
 .profile-details {
-  margin:20px 20px 0px 0px;
+  margin:0px 20px 0px 0px;
   padding-bottom:5px;
   width:75%;
   display:flex;
-  
-
 }
  
  .msg {
@@ -185,11 +186,6 @@ margin-bottom:10px;
    font-size:1.5rem;
 
  }
-
- 
- 
- 
-
  
 .modal {
   position: fixed;
@@ -206,7 +202,7 @@ margin-bottom:10px;
   background: white;
   width:80%;
   height: auto;
-  top:50%;
+  top:35%;
   left:50%;
   transform: translate(-50%,-50%);
 }
@@ -217,7 +213,7 @@ margin-bottom:10px;
   .modal-main {
     position:fixed;
     background: white;
-    width: 60%;
+    width: 40%;
     height: auto;
     top:50%;
     left:50%;
@@ -259,12 +255,17 @@ margin-bottom:10px;
 
 @media (min-width: 768px) {
 
-  .medium-6 {width:50%;}
+  .medium-6 
+  {
+    width:48.5%;
+    margin:.75%;
+  }
 }
  
 
 @media (min-width: 1024px) {
  
-  .col-4 {width: 33%;margin:.16%}
+  /*.col-4 {width: 33%;margin:.16%}*/
+  .col-4 {width: 32.3%;margin:.5%}
 
 }

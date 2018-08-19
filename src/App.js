@@ -62,7 +62,6 @@ class App extends Component {
     const { show } = this.state;
     const est = moment(data.companyInfo.companyEst).format('YYYY');
 
-    console.log(est);
     return (
       <div className="App">
         <header className="App-header">
@@ -76,7 +75,7 @@ class App extends Component {
         </header>
         <div className="App-bar">
           <div className="App-bar-title">
-            <h1>Employees</h1>
+            <h1>Our Employees</h1>
           </div>
           <div className="App-bar-control">
             <div>
