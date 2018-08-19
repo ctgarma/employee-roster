@@ -17,6 +17,7 @@ describe('Card',()=>{
   });
 });
 
+
 describe('ModalBox',()=>{
   it('should exist',()=>{
     expect(ModalBox).toBeTruthy();

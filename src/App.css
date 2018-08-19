@@ -202,13 +202,12 @@ margin-bottom:10px;
   background: white;
   width:80%;
   height: auto;
-  top:35%;
+  top:50%;
   left:50%;
   transform: translate(-50%,-50%);
 }
 
 @media only screen and (min-width: 1024px) { 
-
 
   .modal-main {
     position:fixed;
@@ -228,11 +227,7 @@ margin-bottom:10px;
   content:'';
   background-color:transparent;
   border: none;
-
- 
 }
-
-
 
 .modal-main button:after {
   content: '✖';
@@ -252,7 +247,6 @@ margin-bottom:10px;
   display: none;
 }
 
-
 @media (min-width: 768px) {
 
   .medium-6 
@@ -262,10 +256,11 @@ margin-bottom:10px;
   }
 }
  
-
 @media (min-width: 1024px) {
- 
-  /*.col-4 {width: 33%;margin:.16%}*/
-  .col-4 {width: 32.3%;margin:.5%}
+
+  .col-4 {
+    width: 32.3%;
+    margin:.5%;
+  }
 
 }
