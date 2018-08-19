@@ -27,7 +27,7 @@ class Card extends Component {
 
             const bio = this.truncate(emp.bio, 10);
             return (
-                <div key={emp.id} className="card col-4" onClick={() => {this.handleClick(emp.id)}}>
+                <div key={emp.id} className="card col-4 medium-6" onClick={() => {this.handleClick(emp.id)}}>
                     <div className="card-image">
                         <img src={emp.avatar} alt={emp.firstName} />
                     </div>
@@ -42,7 +42,7 @@ class Card extends Component {
         }
         else
         {
-            return (<div> No Employee Found </div>)
+            return (<div className="msg"> No Employee Found </div>)
         }
     }
 }

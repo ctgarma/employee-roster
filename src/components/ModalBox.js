@@ -13,7 +13,7 @@ class ModalBox extends Component {
        <div className={toggleShow}>   
         <div className="modal-main" ref={node=>(this.modal=node)}>
           {children}
-          <button onClick={handleClose}>close</button>
+          <button onClick={handleClose}> </button>
         </div>
       </div>
     );

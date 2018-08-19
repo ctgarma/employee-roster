@@ -1,33 +1,196 @@
 .App {
+ 
+}
+
+ .App-header {
+  background-color: #222;
+  height: 100px;
+  padding: 10px 10px 10px 20px;
+  color: white;
+  display:flex;
+  overflow: hidden;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.App-bar-control div
+{
+  float:left;
+  padding-left:20px;
+}
+
+.App-bar-control label {
+  padding:10px 10px;
+  
+
+}
+
+.App-bar-control input,.App-bar-control select {
+  margin-top:10px;
+  
+
+}
+
+.contents {
+  padding:10px;
+  float:left;
+  text-align: center;
+  width:100%;
+}
+
+.wrapper {
+  margin:auto;
+  overflow: hidden;
   text-align: center;
 }
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
+.App-bar  {
   height: 80px;
+  padding: 10px 10px 10px 20px; 
+  overflow: hidden;
+  display:flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  margin-bottom:auto;
+  
 }
-
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
+.App-companyname {
+    float:left;
+    text-align: left;
+    
 }
-
 .App-title {
   font-size: 1.5em;
 }
 
+.App-motto {
+  font-size:1rem;
+}
 .App-intro {
   font-size: large;
 }
 
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+ 
+
+.card {
+  width:100%;
+  float:left;
+  border:1px solid grey;
+  margin-top:10px;
 }
 
 
+@media (min-width: 768px) {
+
+  
+}
+.card-image {
+  float:left;
+  width:30%;
+}
+
+.card-image img {
+  width:100%;
+  vertical-align: top;
+}
+
+.card-details {
+  float:left;
+  width:70%;
+  padding:5px;
+}
+
+.card-details p {
+text-align:left;
+margin-top:10px;
+margin-bottom:10px;
+}
+
+
+@media only screen and (min-width: 767px) {
+
+  .card-image {
+    float:left;
+    width:40%;
+  }
+  
+  .card-image img {
+    width:100%;
+    vertical-align: top;
+  }
+  
+  .card-details {
+    float:left;
+    width:60%;
+    padding:10px;
+  }
+  
+  .card-details p {
+  text-align:left;
+  }
+}
+
+
+.profile {
+
+  text-align: left;
+
+}
+.profile-image {
+
+  margin:20px 20px 0px 20px;
+  width:25%;
+}
+
+.profile-image img {
+
+  width:100%;
+}
+
+
+.profile-name {
+  border-bottom:1px solid grey;
+  padding-bottom:5px;
+  width:75%;
+  display:flex;
+  margin-top:auto;
+}
+
+
+.profile-top, .profile-info {
+  overflow: hidden;
+  display:flex; 
+  justify-content: flex-start;
+  margin-top:auto;   
+   
+}
+.profile-jobtitle {
+  margin:20px 20px 0px 20px;
+  width:25%;
+
+}
+
+.profile-details {
+  margin:20px 20px 0px 0px;
+  padding-bottom:5px;
+  width:75%;
+  display:flex;
+  
+
+}
+ 
+ .msg {
+   float:left;
+   text-align: center;
+   padding:20px;
+   font-size:1.5rem;
+
+ }
+
+ 
+ 
+ 
+
+ 
 .modal {
   position: fixed;
   top: 0;
@@ -41,17 +204,48 @@
 .modal-main {
   position:fixed;
   background: white;
-  width: 50%;
+  width:80%;
   height: auto;
   top:50%;
   left:50%;
   transform: translate(-50%,-50%);
 }
 
+@media only screen and (min-width: 1024px) { 
+
+
+  .modal-main {
+    position:fixed;
+    background: white;
+    width: 60%;
+    height: auto;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+  }
+  
+}
 .modal-main button {
   position: absolute;
   top:-25px;
   right:0px;
+  content:'';
+  background-color:transparent;
+  border: none;
+
+ 
+}
+
+
+
+.modal-main button:after {
+  content: '✖';
+  color: white;
+  font-weight: 300;
+  font-family: Arial, sans-serif;
+  height: 20px;
+  width: 20px;
+  background-color: transparent;
 }
 
 .display-block {
@@ -60,4 +254,17 @@
 
 .display-none {
   display: none;
+}
+
+
+@media (min-width: 768px) {
+
+  .medium-6 {width:50%;}
+}
+ 
+
+@media (min-width: 1024px) {
+ 
+  .col-4 {width: 33%;margin:.16%}
+
 }
