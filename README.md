@@ -1,4 +1,4 @@
-# Employee-roster. A SPA using reactj.  It has filtering, sorting and a modal box feature.
+# Employee-roster. A SPA using reactjs.  It has filtering, sorting and a modal box feature.
 
 Download or clone the repository.
 
