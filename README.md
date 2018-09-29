@@ -4,7 +4,7 @@ Download or clone the repository.
 
 run NPM install to intall the libraries.
 
-run NPM run to run the application. 
+run NPM start run to run the application. 
 
 run NPM test to run the Test Suite.
 
